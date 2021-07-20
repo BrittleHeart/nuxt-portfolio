@@ -6,13 +6,15 @@ section#posts.posts-section
     .left_side
       +header('Wpisy')
     .right-side
-      button.button-gray(href="posts.html") Zobacz więcej
+      <nuxt-link to="/posts" class="button-gray" title="zobacz więcej">
+        | Zobacz więcej
+      </nuxt-link>
   .single-post(v-for='post in best_posts' :key='post.id')
     span.created_at
-      //- TODO: Po kliknięciu na wpis w portfolio, przekierować do mojego bloga, którego musze stworzyć!!!!
       | {{ post.created_at }}
-    a.single-post__header(:title='post.badge' href='')
+    <nuxt-link class="single-post__header" :title="post.badge" :to="'posts/'+post.id">
       | {{ post.title }}
+    </nuxt-link>
     p.single-post__description
       | {{ post.description }}
 </template>
