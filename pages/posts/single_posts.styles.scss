@@ -1,0 +1,50 @@
+@import "~/assets/scss/mixins.scss";
+
+.content {
+  h1 {
+    @include header();
+  
+    font-size: 40px;
+    margin-top: 40px;
+  }
+  
+  h2 {
+    @include header();
+  
+    font-size: 35px;
+  }
+  
+  h3 {
+    @include header();
+  
+    font-size: 25px;
+  }
+  
+  p {
+    padding: 10px 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    line-height: 1.5;
+    color: darken($gray-color, 20%);
+    font-size: 15px;
+
+  }
+
+  img {
+    width: 100%;
+    height: 500px;
+  }
+
+  pre {
+    padding: 10px 15px;
+    background-color: #37474F;
+    border-radius: 5px;
+  }
+
+  code {
+    color: #BDBDBD;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+  }
+}

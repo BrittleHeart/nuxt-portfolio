@@ -4,21 +4,21 @@ export const routes: IRoute[] = [
 	{
 		id: 1,
 		name: 'Start',
-		url: '#start'
+		url: '/'
 	},
 	{
 		id: 2,
 		name: 'O mnie',
-		url: '#aboutme'
+		url: '/#aboutme'
 	},
 	{
 		id: 3,
 		name: 'Kontakt',
-		url: '#contact'
+		url: '/#contact'
 	},
 	{
 		id: 4,
 		name: 'Wpisy',
-		url: '#posts'
+		url: '/#posts'
 	}
 ]
