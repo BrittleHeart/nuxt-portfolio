@@ -1,0 +1,170 @@
+section.about-me .projects {
+	@media screen and (min-width: 768px) {
+		width: 90%;
+		margin: 0 auto;
+	}
+	@media screen and (min-width: 992px) {
+		width: 100%;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-column-gap: 25px;
+		grid-row-gap: 20px;
+		align-items: center;
+		justify-content:center;
+	}
+
+	@media screen and (min-width: 1200px) {
+		grid-column-gap: 15px;
+	}
+
+	@media screen and (min-width: 1800px) {
+		grid-column-gap: 25px;
+		grid-row-gap: 40px;
+	}
+	padding: 5px 0;
+}
+
+section.about-me .projects .single-project {
+	@media screen and (min-width: 992px) {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	@media screen and (min-width: 1200px) {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	&:first-child {
+		padding: 20px 0 30px 0;
+	}
+
+	padding: 30px 0;
+	.single-project__subheader {
+		@include header('subheader');
+		@media screen and(min-width: 768px) {
+			font-size: 21px;
+		}
+		@media screen and (min-width: 1200px) {
+			font-size: 30px;
+		}
+		@media screen and (min-width: 1800px) {
+			font-size: 36px;
+		}
+
+		font-size: 19px;
+		padding: 10px 0 15px 0;
+	}
+
+	.single-project__description {
+		@include description(-0.01em, 146.5%, left);
+		@media screen and(min-width: 768px) {
+			font-size: 18px;
+		}
+		@media screen and(min-width: 992px) {
+			font-size: 16px;
+		}
+
+		@media screen and(min-width: 1200px) {
+			font-size: 17px;
+		}
+
+		@media screen and(min-width: 1800px) {
+			font-size: 18px;
+		}
+
+		font-weight: 300;
+	}
+
+	.button-secondary {
+		padding: 10px 15px;
+		font-size: 16px;
+		display: inline-block;
+		margin-top: 25px;
+		text-transform: initial;
+	}
+}
+
+section.about-me .my-projects-article {
+	@media screen and (min-width: 1200px) {
+		width: 90%;
+		margin: 0 auto;
+	}
+	@media screen and (min-width: 1800px) {
+		width: 75%;
+		margin: 0 auto;
+	}
+	@media screen and (min-width: 1800px) {
+		width: 65%;
+		margin: 0 auto;
+	}
+
+	.label {
+		width: 72px;
+		padding: 5px 0;
+	}
+}
+
+section.about-me .my-projects-article .legend-section {
+	@media screen and (min-width: 1200px) {
+		width: 90%;
+		margin: 0;
+	}
+	width: 100%;
+
+	.my-projects__header {
+		@include header('subheader');
+		@media screen and(min-width: 1200px) {
+			font-size: 35px;
+			margin-top: 30px;
+		}
+		@media screen and(min-width: 1800px) {
+			font-size: 40px;
+		}
+
+		font-weight: 600;
+		font-size: 18px;
+	}
+
+	.legend-wrapper {
+		@include flex-with-direction(space-around, row);
+		@media screen and(min-width: 768px) {
+			width: 70%;
+			margin: 0 auto;
+		}
+
+		padding-top: 30px;
+		& > * {
+			text-align: center;
+		}
+
+		.label {
+			margin: 0 auto 10px auto;
+
+			@media screen and(min-width: 1800px) {
+				width: 80px;
+				padding: 5px;
+			}
+		}
+
+		span {
+			@include header('subheader');
+			@media screen and(min-width: 768px) {
+				font-size: 19px;
+			}
+
+			@media screen and(min-width: 1200px) {
+				font-size: 21px;
+			}
+
+			@media screen and(min-width: 1800px) {
+				font-size: 31px;
+			}
+
+			font-weight: 600;
+			font-size: 14px;
+			text-align: center;
+		}
+	}
+}

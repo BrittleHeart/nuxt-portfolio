@@ -1,0 +1,24 @@
+// =========================================================================
+// 4. Positioning mixins
+// =========================================================================
+
+// Set position of element mixin
+@mixin setPosition(
+	$position: relative,
+	$top: 0,
+	$right: initial,
+	$left: 0,
+	$bottom: initial
+) {
+	@if $position == relative {
+		position: relative;
+	}
+
+	@if $position == absolute {
+		position: absolute;
+		top: $top;
+		right: $right;
+		bottom: $bottom;
+		left: $left;
+	}
+}

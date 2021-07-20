@@ -1,0 +1,124 @@
+@keyframes openTopicsModal {
+	from {
+		transform: translate(0, 0);
+	}
+	to {
+		transform: translate(-50%, 13%);
+	}
+}
+
+.contact-section {
+	padding: 10px 15px;
+	width: 100%;
+
+	@media screen and (min-width: 2000px) {
+		width: 65%;
+		margin: 0 auto;
+		padding: 100px 0;
+	}
+
+	.contact-form .send_message-action {
+		@include flex-with-direction(space-between, row);
+
+		.button-secondary {
+			text-transform: initial;
+		}
+	}
+}
+
+.contact-section .contact-section-form {
+	@media screen and(min-width: 1200px) {
+		width: 65%;
+		margin: 0 auto;
+	}
+
+	padding: 40px 10px;
+	.divider {
+		display: none;
+	}
+}
+
+.contact-section .contact-section-form .inputs-groups {
+	@media screen and(min-width: 992px) {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-column-gap: 20px;
+	}
+}
+
+.contact-section .contact-section-form .form-group {
+	padding: 13px 0;
+	.label {
+		display: none;
+	}
+
+	.input,
+	.textarea {
+		@include input;
+
+		width: 100%;
+	}
+
+	textarea {
+		height: 12em;
+		resize: vertical;
+	}
+
+	.input-group {
+		@include setPosition;
+	}
+
+	.topics-available {
+		@include setPosition(absolute, 0, 0, 50%, initial);
+
+		padding: 15px 10px;
+		box-shadow: 0px 3px 6px rgb(0 0 0 / 25%);
+		transform: translate(-50%, 13%);
+		background-color: #ffffff;
+		width: 100%;
+		height: 230px;
+		overflow-y: scroll;
+		margin: 0 auto;
+		z-index: 4;
+		border-radius: 7px;
+		animation: openTopicsModal 0.3s 0s ease-out;
+	}
+
+	.topics-available .topics-available-list {
+		list-style: none;
+
+		.available-list__item {
+			padding: 15px 0 10px 0;
+			border-bottom: 1px solid $main-accent-color;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 300;
+			opacity: 0.7;
+		}
+
+		.available-list__item:last-child {
+			border-bottom: none;
+		}
+	}
+}
+
+.contact-section .contact-section-form .form-group > .input-group {
+	@include setPosition;
+
+	span.material-icons {
+		@include setPosition(absolute, 50%, 10px, initial, initial);
+
+		transform: translate(0, -50%);
+		color: #9e9e9e;
+	}
+}
+
+.contact-section .contact-section-form .form-group > .textarea-group {
+	@include setPosition;
+
+	span.material-icons {
+		@include setPosition(absolute, initial, 10px, initial, initial);
+
+		transform: translate(0, 40%);
+		color: #9e9e9e;
+	}
+}

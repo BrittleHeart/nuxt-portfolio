@@ -1,0 +1,10 @@
+@import '@/assets/scss/mixins.scss';
+@import '@/assets/scss/colors.scss';
+
+section.about-me {
+	padding: 40px 15px;
+}
+
+@import './scss-partials/about-me-article.partial.scss';
+@import './scss-partials/my-skills-article.partial.scss';
+@import './scss-partials/my-projects-article.partial.scss';

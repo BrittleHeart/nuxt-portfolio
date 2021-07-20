@@ -1,0 +1,48 @@
+// =========================================================================
+// 2. Text mixins
+// =========================================================================
+
+// Header mixin
+@mixin header(
+	$header-type: 'header',
+	$font-size: 21px,
+	$line-height: 146.5%,
+	$letter-spacing: 0.005em
+) {
+	@if $header-type == 'header' {
+		font-size: $font-size;
+		letter-spacing: $letter-spacing;
+		padding-bottom: 6px;
+		font-weight: 300;
+	}
+
+	@if $header-type == 'subheader' {
+		font-style: normal;
+		font-weight: 400;
+		font-size: $font-size;
+		letter-spacing: -0.01em;
+	} @else {
+		@warn 'Invalid header-type value #{$header-type}';
+	}
+
+	font-family: 'Poppins', sans-serif;
+	line-height: $line-height;
+	color: #000000;
+}
+
+
+// Mixin description
+@mixin description(
+	$letter-spacing: 0.005em,
+	$line-height: 135.5%,
+	$text-align: center,
+	$font-size: 14px
+) {
+	font-size: $font-size;
+	line-height: $line-height;
+	text-align: $text-align;
+	letter-spacing: $letter-spacing;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: #000000;
+}

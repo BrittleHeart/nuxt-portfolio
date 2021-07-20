@@ -1,0 +1,76 @@
+.newsletter {
+	width: 100%;
+	background-color: $newsletter-background;
+	padding: 30px 0;
+	@media screen and(min-width: 768px) {
+		padding: 40px 0;
+	}
+
+	@media screen and(min-width: 1800px) {
+		padding: 80px 0;
+	}
+
+  .divider {
+    display: none;
+  }
+}
+
+.newsletter h3 {
+	@include header('subheader');
+	@media screen and(min-width: 768px) {
+		font-size: 30px;
+	}
+
+	@media screen and(min-width: 1200px) {
+		font-size: 40px;
+	}
+
+	@media screen and(min-width: 1800px) {
+		font-size: 60px;
+	}
+
+	font-weight: 600;
+	font-size: 21px;
+	color: $pure-white;
+  text-align: center;
+}
+
+.newsletter #newsletter-form {
+	@media screen and(min-width: 768px) {
+		width: 60%;
+	}
+
+	@media screen and(min-width: 1200px) {
+		width: 40%;
+	}
+
+	@media screen and(min-width: 1800px) {
+		width: 30%;
+	}
+
+	width: 90%;
+	margin: 0 auto;
+
+	input {
+		@include input(9px 15px);
+		@media screen and(min-width: 1800px) {
+			padding: 15px 20px;
+		}
+
+		width: 100%;
+		background-color: $pure-white;
+		display: block;
+		margin: 20px auto;
+	}
+}
+
+.newsletter .save-to-newsletter-action {
+	@include flex-with-direction(space-between, row);
+
+	width: 100%;
+	.button-gray {
+		border: 1px solid $newsletter-background;
+		text-transform: initial;
+		padding: 10px 20px;
+	}
+}

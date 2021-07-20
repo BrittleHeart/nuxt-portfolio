@@ -1,0 +1,20 @@
+#projects.projects
+  .single-project(v-for="project in projects")
+    .label(:data-status="project.project_status" :key="project.id")
+    h4.single-project__subheader {{ project.name }}
+    p.single-project__description {{ project.description }}
+    a.button-secondary(
+      v-if="project.targetable"
+      :href="project.project_url"
+    ) Przejdź do projektu
+        
+section.legend-section
+  h4.my-projects__header Legenda
+  .divider
+  .legend-wrapper
+    .legend-item
+        .label(data-status="preparing")
+        span W trakcie
+    .legend-item
+        .label(data-status="done")
+        span Zakończone

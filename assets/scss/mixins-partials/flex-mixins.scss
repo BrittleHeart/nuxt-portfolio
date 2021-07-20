@@ -1,0 +1,11 @@
+// =========================================================================
+// 1. Flex with direction
+// =========================================================================
+@mixin flex-with-direction(
+	$content-direction: space-evenly,
+	$flex-direction: column
+) {
+	display: flex;
+	justify-content: $content-direction;
+	flex-direction: $flex-direction;
+}

@@ -1,0 +1,42 @@
+form.contact-form
+  .inputs-groups
+    .form-group
+      label.label(for="message_topic") Temat: 
+      //- TODO: After click, show modal and set input value
+
+      span.input-group
+        span.material-icons#expand_more
+          | expand_more
+        input.input(
+          @click="modalShown = !modalShown"
+          type="text" 
+          readonly 
+          placeholder="Na jaki temat?" 
+          id="message_topic")
+        .topics-available(v-if="modalShown")
+          ul.topics-available-list
+            li.available-list__item(v-for="topic in topics")
+              input(type="hidden" :value="topic.id")
+              input(type="hidden" :value="topic.var_question")
+              span.topic {{ topic.name }}
+    .form-group
+      label.label(for="user_email") Email: 
+      span.input-group
+        span.material-icons
+          | cancel
+        input.input(
+          type="email"
+          placeholder="Jaki masz email?"
+          id="user_email"
+          autocomplete="email")
+  .form-group
+    label.label(for="message") Message: 
+    span.textarea-group
+      span.material-icons
+        | cancel
+      textarea.textarea(
+        placeholder="Twoja wiadomość"
+        id="message")
+  .send_message-action
+    div
+    button.button-secondary(type="submit") Wyślij wiadomość
