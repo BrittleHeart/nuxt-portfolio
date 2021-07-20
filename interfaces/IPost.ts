@@ -4,4 +4,5 @@ export default interface IPost {
   badge: string;
   description: string;
   created_at: string;
+  name: string;
 }

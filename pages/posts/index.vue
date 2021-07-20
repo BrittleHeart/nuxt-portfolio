@@ -1,18 +1,18 @@
 <template lang="pug">
 section#posts.posts-section
-  include ../../../pug-mixins/header
+  //- include ../../../pug-mixins/header
 
   .posts_heading
     .left_side
-      +header('Wpisy')
+      //- +header('Wpisy')
     .right-side
       <nuxt-link to="/posts" class="button-gray" title="zobacz więcej">
         | Zobacz więcej
       </nuxt-link>
-  .single-post(v-for='post in trimPostsLength' :key='post.id')
+  .single-post(v-for='post in best_posts' :key='post.id')
     span.created_at
       | {{ post.created_at }}
-    <nuxt-link class="single-post__header" :title="post.badge" :to="'posts/'+post.name">
+    <nuxt-link class="single-post__header" :title="post.badge" :to="'posts/'+post.id">
       | {{ post.title }}
     </nuxt-link>
     p.single-post__description
@@ -20,21 +20,16 @@ section#posts.posts-section
 </template>
 
 <script>
-import { best_posts } from './best-posts'
+import { best_posts } from '@/components/Main/posts/best-posts'
 
 export default {
 	name: 'Posts',
   data: () => ({
     best_posts,
-  }),
-  computed: {
-    trimPostsLength() {
-      return this.best_posts = this.best_posts.slice(0, 3)
-    }
-  }
+  })
 };
 </script>
 
 <style lang="scss" scoped>
-@import './posts.styles.scss';
+@import '@/components/Main/posts/posts.styles.scss';
 </style>
