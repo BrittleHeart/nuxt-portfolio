@@ -1,6 +1,6 @@
-![Image](https://unsplash.it/400/400 'Automatyzacja zycia')
+![Image](https://unsplash.it/900/800 'Automatyzacja zycia')
 
-# W jaki sposób zautomatyzowac swoje zycie?
+# Jak zautomatyzowac swoje zycie?
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla semper, tortor et eleifend vulputate, nulla ante dapibus justo, 
 interdum aliquet neque nisl vitae nulla. Cras vestibulum lacinia egestas. Nam at luctus risus. Etiam accumsan in nisi eget maximus. Morbi iaculis auctor orci, eget laoreet enim faucibus id. Pellentesque eu rutrum urna, 

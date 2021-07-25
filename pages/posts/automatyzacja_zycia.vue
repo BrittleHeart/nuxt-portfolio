@@ -1,18 +1,19 @@
 <template lang="pug">
   section.wrapper(aria-label="Zawartość postu" aria-labelledby="content-wrapper")
+    <Nav title="#StaySecure" />
     div.container#content-wrapper
-      <Nav title="#StaySecure" />
 
       .content
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="/">start</a></li>
-            <li class="breadcrumb-item"><a href="/posts">wpisy</a></li>
-            <li class="breadcrumb-item active" aria-current="page">{{getCurrentPage}}</li>
-          </ol>
-        </nav>
+        nav(aria-label="breadcrumb")
+          ol.breadcrumb
+            li.breadcrumb-item
+              a(href="/") start
+            li.breadcrumb-item
+              a(href="/posts") wpisy
+            li.breadcrumb-item.active
+              | {{ getCurrentPage }}
         include:markdown-it ./posts_dir/automatyzacja-zycia.md
-      
+    footer.footer-content
       <Footer />
 </template>
 
@@ -38,17 +39,10 @@ export default {
 @import "./single_posts.styles.scss";
 @import "~/assets/scss/colors.scss";
 
-.main-header__navbar {
-  background: none;
-  box-shadow: none;
-  padding: 0;
-  margin-bottom: 10px;
-}
-
 .content {
   padding: 40px 0;
   font-family: Poppins, sans-serif;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
