@@ -151,6 +151,15 @@ section.about-me .about-me-article .about-me-section__right-side {
 		width: 40%;
 		padding: 40px 0;
 		margin: 0 auto;
+		
+		a span.material-icons {
+			color: $pure-dark;
+			transition: color 0.3s ease-in-out;
+
+			&:hover, &:focus {
+				color: $secondary-accent-color;
+			}
+		}
 
 		span.material-icons {
 			font-size: 70px;
