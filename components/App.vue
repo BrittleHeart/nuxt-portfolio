@@ -17,105 +17,110 @@ div
 </template>
 
 <script lang="ts">
-import Header from '@/components/Header/Header.vue'
-import Nav from '@/components/Nav.vue'
-import Jumbotron from '@/components/Header/Jumbotron.vue'
-import AboutMe from '@/components/Main/aboutme/AboutMe.vue'
-import Contact from '@/components/Main/contact/Contact.vue'
-import Posts from '@/components/Main/posts/Posts.vue'
-import Footer from '@/components/Footer/Footer.vue'
+import Header from "@/components/Header/Header.vue";
+import Nav from "@/components/Nav.vue";
+import Jumbotron from "@/components/Header/Jumbotron.vue";
+import AboutMe from "@/components/Main/aboutme/AboutMe.vue";
+import Contact from "@/components/Main/contact/Contact.vue";
+import Posts from "@/components/Main/posts/Posts.vue";
+import Footer from "@/components/Footer/Footer.vue";
+import { loadAOS } from "../load-thirdparty-lib";
 
 export default {
-	name: 'App',
-	components: {
-		Header,
-		Nav,
-		Jumbotron,
-		AboutMe,
-		Contact,
-		Posts,
-		Footer
-	}
-}
+  name: "App",
+  components: {
+    Header,
+    Nav,
+    Jumbotron,
+    AboutMe,
+    Contact,
+    Posts,
+    Footer
+  },
+  mounted() {
+    loadAOS();
+  }
+};
 </script>
 
 <style lang="scss">
-@import './assets/scss/mixins.scss';
-@import './assets/scss/colors.scss';
+@import "./assets/scss/mixins.scss";
+@import "./assets/scss/colors.scss";
 
 *,
 *::before,
 *::after {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-	max-width: 100vw;
-	background: $nav-white-color none;
+  max-width: 100vw;
+  background: $nav-white-color none;
 }
 
 body,
 html {
-	max-height: 100vh;
+  max-height: 100vh;
+  scroll-behavior: smooth;
 }
 
 #app {
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .content__wrapper-header {
-	@include header();
+  @include header();
 
-	@media screen and (min-width: 768px) {
-		font-size: 27px;
-	}
+  @media screen and (min-width: 768px) {
+    font-size: 27px;
+  }
 
-	@media screen and (min-width: 992px) {
-		font-size: 30px;
-	}
+  @media screen and (min-width: 992px) {
+    font-size: 30px;
+  }
 
-	@media screen and (min-width: 1200px) {
-		font-size: 45px;
-	}
+  @media screen and (min-width: 1200px) {
+    font-size: 45px;
+  }
 }
 
 .content__wrapper-subheader {
-	@include header('subheader');
+  @include header("subheader");
 
-	@media screen and (min-width: 768px) {
-		font-size: 23px;
-	}
+  @media screen and (min-width: 768px) {
+    font-size: 23px;
+  }
 
-	@media screen and (min-width: 992px) {
-		font-size: 25px;
-	}
+  @media screen and (min-width: 992px) {
+    font-size: 25px;
+  }
 
-	@media screen and (min-width: 1200px) {
-		font-size: 35px;
-	}
+  @media screen and (min-width: 1200px) {
+    font-size: 35px;
+  }
 }
 
 .button-primary {
-	@include button();
+  @include button();
 }
 
 .button-secondary {
-	@include button('secondary');
+  @include button("secondary");
 }
 
 .button-gray {
-	@include button('gray');
+  @include button("gray");
 }
 
 .divider {
-	@include divider;
+  @include divider;
 }
 
 .footer-content {
-	background: $pure-white;
-	box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
+  background: $pure-white;
+  box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
 }
 </style>

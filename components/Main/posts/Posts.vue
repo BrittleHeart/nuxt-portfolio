@@ -1,5 +1,5 @@
 <template lang="pug">
-section#posts.posts-section
+section#posts.posts-section(data-aos="zoom-in-up" data-aos-delay="70")
   include ../../../pug-mixins/header
 
   .posts_heading
