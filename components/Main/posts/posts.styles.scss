@@ -47,6 +47,10 @@
 			font-size: 26px;
 		}
 
+		&:hover, &:focus {
+			color: darken($secondary-accent-color, 10%);
+		}
+		transition: color 0.211s ease-in;
 		font-weight: 600;
 		padding-bottom: 10px;
 		display: block;

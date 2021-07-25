@@ -3,44 +3,60 @@
 // =========================================================================
 
 // Button mixin
-@mixin button($buttonType: 'primary') {
-	@if $buttonType == 'primary' {
-		background: none;
-	}
+@mixin button($buttonType: "primary") {
+  @if $buttonType == "primary" {
+    background: none;
 
-	@if $buttonType == 'secondary' {
-		background: #80deea;
-	}
+    &:hover,
+    &:focus {
+      background-color: #80deea;
+    }
+  }
 
-	@if $buttonType == 'gray' {
-		background: #607d8b;
-		border: 2px solid #607d8b;
-	}
+  @if $buttonType == "secondary" {
+    background: #80deea;
 
-	text-decoration: none;
-	padding: 12px 20px;
-	border: 2px solid #80deea;
-	border-radius: 3px;
-	color: #ffffff;
-	font-family: 'Open Sans', sans-serif;
-	font-style: normal;
-	font-weight: 600;
-	font-size: 14px;
-	text-align: center;
-	letter-spacing: 0.1em;
-	text-transform: uppercase;
-	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.25);
+    &:hover, &:focus {
+      background: none;
+      color: $pure-dark;
+    }
+  }
+
+  @if $buttonType == "gray" {
+    background: #607d8b;
+    border: 2px solid #607d8b;
+
+    &:hover, &:focus {
+      background-color: darken(#607d8b, 15%);
+    }
+  }
+
+  transition: background-color 0.3s ease-in;
+  text-decoration: none;
+  padding: 12px 20px;
+  border: 2px solid #80deea;
+  border-radius: 3px;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 
 @mixin input($padding: 10px 15px) {
-	padding: $padding;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 17px;
-	font-weight: 400;
-	letter-spacing: 0.0025em;
-	line-height: 146.5%;
-	outline: none;
-	border: 1px solid $gray-color;
-	background: none;
-	border-radius: 5px;
+  padding: $padding;
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0.0025em;
+  line-height: 146.5%;
+  outline: none;
+  border: 1px solid $gray-color;
+  background: none;
+  border-radius: 5px;
 }
