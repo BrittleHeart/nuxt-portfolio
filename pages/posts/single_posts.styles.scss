@@ -248,4 +248,18 @@
     font-family: Poppins, sans-serif;
     font-weight: 600;
   }
+
+  blockquote {
+    padding: 20px;
+    border-left: 3px solid #5a5959;
+    background: lightgray;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    p {
+      color: #7e7e7e;
+      font-weight: 600;
+      line-height: 2;
+    }
+  }
 }
