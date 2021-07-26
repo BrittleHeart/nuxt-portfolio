@@ -6,9 +6,9 @@
         nav(aria-label="breadcrumb")
           ol.breadcrumb
             li.breadcrumb-item
-              a(href="/") start
+              nuxt-link(to="/") start
             li.breadcrumb-item
-              a(href="/posts") wpisy
+              nuxt-link(to="/posts") wpisy
             li.breadcrumb-item.active
               | {{ getCurrentPage }}
         <slot></slot>
