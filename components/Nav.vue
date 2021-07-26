@@ -4,7 +4,7 @@ nav#start.main-header__navbar(aria-label="Główna nawigacja" aria-labelledby="m
     a.navbar__wrapper-header {{title}}
     ul.navbar__wrapper-link-list
       li.link-list__item(v-for="route in routes")
-        a(:href="route.url" :key="route.id") {{route.name}}
+        nuxt-link(:to="route.url" :key="route.id") {{route.name}}
 </template>
 
 <script>
@@ -53,15 +53,27 @@ export default {
     margin-right: 20px;
     padding-top: 10px;
 
+    a {
+      transition: color 0.245s ease-in;
+      &:hover {
+        color: $secondary-accent-color;
+      }
+    }
+
+    .nuxt-link-exact-active {
+      font-weight: 600;
+      color: $newsletter-background;
+    }
+
     &:last-child {
       margin-right: 0;
     }
   }
 
-  .link-list__item:first-child a {
-    font-weight: 600;
-    color: #37474f;
-  }
+  // .link-list__item:first-child a {
+  //   font-weight: 600;
+  //   color: #37474f;
+  // }
 
   a {
     text-decoration: none;
