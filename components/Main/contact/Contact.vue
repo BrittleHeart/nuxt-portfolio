@@ -1,13 +1,9 @@
 <template lang="pug">
 div
-  section#contact.contact-section
+  section#newsletter.contact-section
     include ../../../pug-mixins/header
     include ../../../pug-mixins/subheader
-    +header('Kontakt')
-
-    #contact_form.contact-section-form(aria-label="Wypełnij ponizszy formularz" aria-labelledby="contact_form_header")
-      +subHeader('Wypełnij ponizszy formularz')
-      include pug-partials/form-article
+    +header('Newsletter')
 
   .newsletter(aria-label="Zapisz się na newsletter" aria-labelledby="newsletter-form")
     +subHeader('Zapisz się na newsletter')
@@ -22,7 +18,8 @@ export default {
   name: 'Contact',
   data: () => ({
     topics,
-    modalShown: false
+    modalShown: false,
+    chosenTopic: ''
   })
 }
 </script>

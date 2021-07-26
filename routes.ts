@@ -13,8 +13,8 @@ export const routes: IRoute[] = [
 	},
 	{
 		id: 3,
-		name: 'Kontakt',
-		url: '/#contact'
+		name: 'Newsletter',
+		url: '/#newsletter'
 	},
 	{
 		id: 4,

@@ -1,24 +1,22 @@
-form.contact-form
+form.contact-form(method="post" action="mailto: b.pazdur@yahoo.com")
   .inputs-groups
     .form-group
       label.label(for="message_topic") Temat: 
-      //- TODO: After click, show modal and set input value
-
       span.input-group
         span.material-icons#expand_more
           | expand_more
         input.input(
           @click="modalShown = !modalShown"
-          type="text" 
+          type="text"
+          name="title"
           readonly 
           placeholder="Na jaki temat?" 
-          id="message_topic")
+          id="message_topic"
+          :value="chosenTopic")
         .topics-available(v-if="modalShown")
           ul.topics-available-list
             li.available-list__item(v-for="topic in topics")
-              input(type="hidden" :value="topic.id")
-              input(type="hidden" :value="topic.var_question")
-              span.topic {{ topic.name }}
+              span.topic(@click="chosenTopic = topic.name; modalShown = false;") {{ topic.name }}
     .form-group
       label.label(for="user_email") Email: 
       span.input-group
@@ -27,6 +25,7 @@ form.contact-form
         input.input(
           type="email"
           placeholder="Jaki masz email?"
+          name="from"
           id="user_email"
           autocomplete="email")
   .form-group
@@ -36,7 +35,8 @@ form.contact-form
         | cancel
       textarea.textarea(
         placeholder="Twoja wiadomość"
-        id="message")
+        id="message"
+        name="message")
   .send_message-action
     div
     button.button-secondary(type="submit") Wyślij wiadomość
