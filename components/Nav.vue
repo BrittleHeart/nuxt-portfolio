@@ -1,7 +1,7 @@
 <template lang="pug">
 nav#start.main-header__navbar(aria-label="Główna nawigacja" aria-labelledby="main_navbar")
   #main_navbar.navbar__wrapper
-    a.navbar__wrapper-header {{title}}
+    nuxt-link.navbar__wrapper-header(to="/") {{title}}
     ul.navbar__wrapper-link-list
       li.link-list__item(v-for="route in routes")
         nuxt-link(:to="route.url" :key="route.id") {{route.name}}
