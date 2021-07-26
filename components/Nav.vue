@@ -62,18 +62,13 @@ export default {
 
     .nuxt-link-exact-active {
       font-weight: 600;
-      color: $newsletter-background;
+      color: $active-link-accent-color;
     }
 
     &:last-child {
       margin-right: 0;
     }
   }
-
-  // .link-list__item:first-child a {
-  //   font-weight: 600;
-  //   color: #37474f;
-  // }
 
   a {
     text-decoration: none;
