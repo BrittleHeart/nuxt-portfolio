@@ -16,7 +16,7 @@
       | filmów oraz stałego doskonalania samego siebie. 
       | Obecnie zatrudniony w przedsiębiorstwie Encode IT Rafał Jaseniuk
     .download-my-cv-action
-      button.button-primary(type="button") Pobierz moje CV
+      a.button-primary(href="mailto:b.pazdur@yahoo.com") Skontaktuj się
     .move-down
   span.material-icons
     | keyboard_arrow_down
@@ -71,6 +71,18 @@ export default {
 
 	align-items: center;
 	margin-top: 70px;
+
+	.button-primary {
+		font-size: 14px;
+
+		@media screen and (min-width: 768px) {
+			font-size: 17px;
+		}
+		@media screen and (min-width: 1200px) {
+			font-size: 20px;
+		}
+	}
+	
 }
 
 .header-jumbotron .material-icons {

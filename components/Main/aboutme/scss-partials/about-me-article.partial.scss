@@ -152,6 +152,9 @@ section.about-me .about-me-article .about-me-section__right-side {
 		padding: 40px 0;
 		margin: 0 auto;
 		
+		a {
+			text-decoration: none;
+		}
 		a span.material-icons {
 			color: $pure-dark;
 			transition: color 0.3s ease-in-out;
@@ -162,8 +165,16 @@ section.about-me .about-me-article .about-me-section__right-side {
 		}
 
 		span.material-icons {
+			@include flex-with-direction(center, row);
+
+			align-items: center;
 			font-size: 70px;
 			margin: 0 auto;
+
+			img {
+				width: 60px;
+				height: 60px;
+			}
 
 			@media screen and(min-width: 768px) {
 				margin: 0 20px;
