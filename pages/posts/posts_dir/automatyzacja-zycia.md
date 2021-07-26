@@ -1,5 +1,3 @@
-![Image](https://unsplash.it/900/800 'Automatyzacja zycia')
-
 # Jak zautomatyzowac swoje zycie?
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla semper, tortor et eleifend vulputate, nulla ante dapibus justo, 
