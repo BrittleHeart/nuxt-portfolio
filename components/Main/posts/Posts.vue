@@ -6,15 +6,13 @@ section#posts.posts-section(data-aos="zoom-in-up" data-aos-delay="70")
     .left_side
       +header('Wpisy')
     .right-side
-      <nuxt-link to="/posts" class="button-gray" title="zobacz więcej">
+      nuxt-link.button-gray(to="/posts" title="zobacz więcej")
         | Zobacz więcej
-      </nuxt-link>
   .single-post(v-for='post in trimPostsLength' :key='post.id')
     span.created_at
       | {{ post.created_at }}
-    <nuxt-link class="single-post__header" :title="post.badge" :to="'posts/'+post.name">
+    nuxt-link.single-post__header(:title="post.badge" :to="'posts/'+post.name")
       | {{ post.title }}
-    </nuxt-link>
     p.single-post__description
       | {{ post.description }}
 </template>
