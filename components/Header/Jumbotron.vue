@@ -1,12 +1,5 @@
 <template lang="pug">
 #header_jumbotron.header-jumbotron(aria-label="Jumbotron dla głównego nagłówka" aria-labelledby="header")
-  #header_jumbotron_modal.header-jumbotron__modal(style={display: 'none'})
-    h1.jumbotron__modal-header Poczekaj chwilkę
-    p.jumbotron__modal-description
-      | Jezeli chcesz pobrać moje CV, proszę skontaktuj się ze mną.
-      | Ponizej znajdziesz niezbędny formularz. 
-      | Serdecznie dziękuję za okazane zainteresowanie!
-
   .header-jumbotron__wrapper
     h1.header-jumbotron__header
       | Bartosz
