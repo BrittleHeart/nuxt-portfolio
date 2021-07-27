@@ -11,8 +11,9 @@
     .download-my-cv-action
       a.button-primary(href="mailto:b.pazdur@yahoo.com") Skontaktuj się
     .move-down
-  span.material-icons
-    | keyboard_arrow_down
+  nuxt-link(to="/#aboutme") 
+   span.material-icons
+     | keyboard_arrow_down
 </template>
 
 <script>
