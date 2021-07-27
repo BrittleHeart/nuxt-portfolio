@@ -1,7 +1,7 @@
 <template lang="pug">
 nav#start.main-header__navbar(aria-label="Główna nawigacja" aria-labelledby="main_navbar")
   #main_navbar.navbar__wrapper
-    nuxt-link.navbar__wrapper-header(to="/") {{title}}
+    nuxt-link.navbar__wrapper-header(to="/") #StaySecure
     ul.navbar__wrapper-link-list
       li.link-list__item(v-for="route in routes")
         nuxt-link(:to="route.url" :key="route.id") {{route.name}}
@@ -12,7 +12,6 @@ import { routes } from "@/routes";
 
 export default {
   name: "Nav",
-  props: ["title"],
   data: () => ({
     routes
   })

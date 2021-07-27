@@ -1,7 +1,7 @@
 <template lang="pug">
 div
 	<Header>
-		<Nav title="#StaySecure" />
+		<Nav />
 		<Jumbotron />
 	</Header>
 

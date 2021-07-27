@@ -1,6 +1,6 @@
 <template lang="pug">
   section.wrapper(aria-label="Zawartość postu" aria-labelledby="content-wrapper")
-    <Nav title="#StaySecure" />
+    <Nav />
     div.container#content-wrapper
       .content
         nav(aria-label="breadcrumb")
