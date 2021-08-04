@@ -11,7 +11,9 @@ div
 			<AboutMe />
 			<Contact />
 			<Posts />
-			<facebook-channels></facebook-channels>
+			<div id="fb-root"></div>
+
+			<div id="fb-customer-chat" class="fb-customerchat"></div>
 			
 	footer.footer-content
 		<Footer />
@@ -25,7 +27,6 @@ import AboutMe from "@/components/Main/aboutme/AboutMe.vue";
 import Contact from "@/components/Main/contact/Contact.vue";
 import Posts from "@/components/Main/posts/Posts.vue";
 import Footer from "@/components/Footer/Footer.vue";
-import FacebookChannels from "@/components/FacebookChatApi.vue";
 import { loadAOS, loadFacebookApi } from "../load-thirdparty-lib";
 
 export default {
@@ -37,7 +38,6 @@ export default {
     AboutMe,
     Contact,
     Posts,
-    FacebookChannels,
     Footer
   },
   mounted() {
