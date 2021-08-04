@@ -5,15 +5,20 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { name: 'author', content: "Bartosz Pazdur" },
+      {
+        hid: 'description', name: 'description', content: `Strona mojego portfolio. 
+      Znajdują się tu informacje na temat inicjatyw w których biorę udział oraz wpisy na temat podstaw biezpieczeństwa sieciowego.
+      Znajdziesz tutaj informacje na temat projektów zrealizowanych bądź w dalszym ciągu tworzonych przeze mnie, informacje kontaktowe
+      i nie tylko` },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' },
-      { rel: 'preconnect', href: 'https://fonts.googleapis.com'},
-      { rel: 'preconnect', href: 'https://fonts.gstatic.com'},
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;300i;400&family=Poppins:wght@300;400;600i&display=swap'},
+      { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+      { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;300i;400&family=Poppins:wght@300;400;600i&display=swap' },
       { rel: 'stylesheet', href: 'https://unpkg.com/aos@next/dist/aos.css' },
     ],
   },
