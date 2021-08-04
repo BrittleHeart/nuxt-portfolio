@@ -22,7 +22,7 @@ export function loadFacebookApi() {
     if (d.getElementById(id)) return;
     js = d.createElement(s);
     js.id = id;
-    js.src = "https://connect.facebook.net/pl_PL/sdk/xfbml.customerchat.js";
+    js.src = "https://connect.facebook.net/pl_PL/all.js";
     fjs.parentNode.insertBefore(js, fjs);
   })(document, "script", "facebook-jssdk");
 }
