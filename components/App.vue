@@ -11,12 +11,12 @@ div
 			<AboutMe />
 			<Contact />
 			<Posts />
-			<div id="fb-root"></div>
-
-			<div id="fb-customer-chat" class="fb-customerchat"></div>
 			
 	footer.footer-content
 		<Footer />
+	<div id="fb-root"></div>
+
+	<div id="fb-customer-chat" class="fb-customerchat"></div>
 </template>
 
 <script lang="ts">
