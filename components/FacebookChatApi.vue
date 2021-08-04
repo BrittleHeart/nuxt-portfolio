@@ -9,13 +9,7 @@
 </template>
 
 <script>
-import { loadFacebookApi } from "@/load-thirdparty-lib";
-
-export default {
-  mounted() {
-    loadFacebookApi();
-  }
-};
+export default {};
 </script>
 
 <style></style>

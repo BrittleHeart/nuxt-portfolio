@@ -26,7 +26,7 @@ import Contact from "@/components/Main/contact/Contact.vue";
 import Posts from "@/components/Main/posts/Posts.vue";
 import Footer from "@/components/Footer/Footer.vue";
 import FacebookChannels from "@/components/FacebookChatApi.vue";
-import { loadAOS } from "../load-thirdparty-lib";
+import { loadAOS, loadFacebookApi } from "../load-thirdparty-lib";
 
 export default {
   name: "App",
@@ -42,6 +42,7 @@ export default {
   },
   mounted() {
     loadAOS();
+    loadFacebookApi();
   }
 };
 </script>
