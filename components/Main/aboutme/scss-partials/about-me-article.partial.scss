@@ -1,192 +1,192 @@
 section.about-me .about-me-article {
-	@include flex-with-direction;
-	@media screen and(min-width: 1200px) {
-		@include flex-with-direction(space-between, row);
-		
-		width: 100%;
-	}
+  @include flex-with-direction;
+  @media screen and(min-width: 1200px) {
+    @include flex-with-direction(space-between, row);
 
-	@media screen and(min-width: 1800px) {
-		@include flex-with-direction(space-between, row);
+    width: 100%;
+  }
 
-		width: 75%;
-		margin: 0 auto;
-	}
-	
-	@media screen and(min-width: 2000px) {
-		@include flex-with-direction(space-between, row);
+  @media screen and(min-width: 1800px) {
+    @include flex-with-direction(space-between, row);
 
-		width: 65%;
-		margin: 0 auto;
-		padding: 80px 0;
-	}
+    width: 75%;
+    margin: 0 auto;
+  }
 
-	width: 100%;
-	max-width: 100%;
-	align-items: center;
+  @media screen and(min-width: 2000px) {
+    @include flex-with-direction(space-between, row);
+
+    width: 65%;
+    margin: 0 auto;
+    padding: 80px 0;
+  }
+
+  width: 100%;
+  max-width: 100%;
+  align-items: center;
 }
 
 section.about-me .about-me-article .about-me-section__left-side {
-	@include flex-with-direction(center);
-	@include setPosition;
-	@media screen and(min-width: 768px) {
-		@include flex-with-direction(left);
+  @include flex-with-direction(center);
+  @include setPosition;
+  @media screen and(min-width: 768px) {
+    @include flex-with-direction(left);
 
-		align-items: normal;
-	}
+    align-items: normal;
+  }
 
-	@media screen and(min-width: 1200px) {
-		@include flex-with-direction(left, row);
-	}
+  @media screen and(min-width: 1200px) {
+    @include flex-with-direction(left, row);
+  }
 
-	align-items: center;
-	.about-me-section__avatar {
-		width: 240px;
-		height: 240px;
-		display: block;
-		margin: 40px 0 20px 0;
-		border-radius: 50%;
-		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.27));
-		transition: border-radius 0.3s ease-out;
-		&:hover {
-			border-radius: 0;
-		}
+  align-items: center;
+  .about-me-section__avatar {
+    width: 240px;
+    height: 240px;
+    display: block;
+    margin: 40px 0 20px 0;
+    border-radius: 50%;
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.27));
+    transition: border-radius 0.3s ease-out;
+    &:hover {
+      border-radius: 0;
+    }
 
-		@media screen and(min-width: 768px) {
-			width: 100%;
-			height: 450px;
-			border-radius: 3px;
-		}
+    @media screen and(min-width: 768px) {
+      width: 100%;
+      height: 450px;
+      border-radius: 3px;
+    }
 
-		@media screen and(min-width: 992px) {
-			height: 600px;
-		}
+    @media screen and(min-width: 992px) {
+      height: 600px;
+    }
 
-		@media screen and(min-width: 1200px) {
-			height: 500px;
-		}
+    @media screen and(min-width: 1200px) {
+      height: 500px;
+    }
 
-		@media screen and(min-width: 2000px) {
-			height: 600px;
-			margin-right:20px;
-		}
-
-	}
+    @media screen and(min-width: 2000px) {
+      height: 600px;
+      margin-right: 20px;
+    }
+  }
 }
 
 section.about-me .about-me-article .about-me-section__right-side {
-	@include flex-with-direction(center);
-	@media screen and(min-width: 768px) {
-		@include flex-with-direction(left);
+  @include flex-with-direction(center);
+  @media screen and(min-width: 768px) {
+    @include flex-with-direction(left);
 
-		align-items: flex-start;
-	}
+    align-items: flex-start;
+  }
 
-	@media screen and(min-width: 992px) {
-		@include flex-with-direction(center);
+  @media screen and(min-width: 992px) {
+    @include flex-with-direction(center);
 
-		align-items: center;
-	}
+    align-items: center;
+  }
 
-	@media screen and(min-width: 1200px) {
-		.button-secondary {
-			margin-left: 30px;
-			align-self: flex-start;
-			font-size: 1.3rem;
-			padding-top: 10px;
-			text-transform: initial;
-		}
-	}
+  @media screen and(min-width: 1200px) {
+    .button-secondary {
+      margin-left: 30px;
+      align-self: flex-start;
+      font-size: 1.3rem;
+      padding-top: 10px;
+      text-transform: initial;
+    }
+  }
 
-	align-items: center;
-	.about-me-section__description {
-		@include description;
-		@media screen and(min-width: 768px) {
-			@include description(0.005rem, 145.5%);
+  align-items: center;
+  .about-me-section__description {
+    @include description;
+    @media screen and(min-width: 768px) {
+      @include description(0.005rem, 145.5%);
 
-			font-size: 18px;
-			text-align: left;
-			padding-top: 10px;
-		}
+      font-size: 18px;
+      text-align: left;
+      padding-top: 10px;
+    }
 
-		@media screen and(min-width: 992px) {
-			font-size: 20px;
-			line-height: 160%;
-			text-align: center;
-			width: 90%;
-			margin: 20px auto;
-		}
+    @media screen and(min-width: 992px) {
+      font-size: 20px;
+      line-height: 160%;
+      text-align: center;
+      width: 90%;
+      margin: 20px auto;
+    }
 
-		@media screen and(min-width: 1200px) {
-			text-align: left;
-			padding-bottom: 20px;
-		}
+    @media screen and(min-width: 1200px) {
+      text-align: left;
+      padding-bottom: 20px;
+    }
 
-		@media screen and(min-width: 2000px) {
-			font-size: 23px;
-		}
-	}
+    @media screen and(min-width: 2000px) {
+      font-size: 23px;
+    }
+  }
 
-	.material-icons__wrapper {
-		@include flex-with-direction(center, row);
-		@media screen and(min-width: 768px) {
-			@include flex-with-direction(left, row);
+  .material-icons__wrapper {
+    @include flex-with-direction(center, row);
+    @media screen and(min-width: 768px) {
+      @include flex-with-direction(left, row);
 
-			align-items: left;
-			width: 100%;
-		}
+      align-items: left;
+      width: 100%;
+    }
 
-		@media screen and(min-width: 992px) {
-			@include flex-with-direction(center, row);
+    @media screen and(min-width: 992px) {
+      @include flex-with-direction(center, row);
 
-			align-items: center;
-		}
+      align-items: center;
+    }
 
-		@media screen and(min-width: 1200px) {
-			justify-content: start;
-			padding: 10px 20px;
-		}
+    @media screen and(min-width: 1200px) {
+      justify-content: start;
+      padding: 10px 20px;
+    }
 
-		align-items: center;
-		width: 40%;
-		padding: 40px 0;
-		margin: 0 auto;
-		
-		a {
-			text-decoration: none;
-		}
-		a span.material-icons {
-			color: $pure-dark;
-			transition: color 0.3s ease-in-out;
+    align-items: center;
+    width: 40%;
+    padding: 40px 0;
+    margin: 0 auto;
 
-			&:hover, &:focus {
-				color: $secondary-accent-color;
-			}
-		}
+    a {
+      text-decoration: none;
+    }
+    a span.material-icons {
+      color: $pure-dark;
+      transition: color 0.3s ease-in-out;
 
-		span.material-icons {
-			@include flex-with-direction(center, row);
+      &:hover,
+      &:focus {
+        color: $secondary-accent-color;
+      }
+    }
 
-			align-items: center;
-			font-size: 70px;
-			margin: 0 auto;
+    span.material-icons {
+      @include flex-with-direction(center, row);
 
-			img {
-				width: 60px;
-				height: 60px;
-			}
+      align-items: center;
+      font-size: 70px;
+      margin: 0 auto;
 
-			@media screen and(min-width: 768px) {
-				margin: 0 20px;
-				&:first-child {
-					margin-left: 0;
-				}
-			}
+      img {
+        width: 60px;
+        height: 60px;
+      }
 
-			@media screen and(min-width: 1200px) {
-				font-size: 70px;
-				padding-bottom: 30px;
-			}
-		}
-	}
+      @media screen and(min-width: 768px) {
+        margin: 0 20px;
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+
+      @media screen and(min-width: 1200px) {
+        font-size: 70px;
+        padding-bottom: 30px;
+      }
+    }
+  }
 }

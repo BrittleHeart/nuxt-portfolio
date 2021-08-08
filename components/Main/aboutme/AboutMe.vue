@@ -2,7 +2,7 @@
 section.about-me#aboutme
   include ../../../pug-mixins/header
   include ../../../pug-mixins/subheader
-  +header('Co nieco o mnie')
+  +header('O mnie')
 
   //- about me section
   article.about-me-article(aria-label="Informacje o mnie" aria-labelledby="about-me-section__description")
@@ -19,24 +19,24 @@ section.about-me#aboutme
 </template>
 
 <script lang="ts">
-import { skills, setSkillPercentage } from '@/components/Main/aboutme/skills'
+import { skills, setSkillPercentage } from "@/components/Main/aboutme/skills";
 import {
-	projects,
-	setProjectStatusLabel
-} from '@/components/Main/aboutme/projects'
+  projects,
+  setProjectStatusLabel
+} from "@/components/Main/aboutme/projects";
 
 export default {
-	name: 'AboutMe',
-	data: () => ({
-		skills,
-		projects
-	}),
-	mounted() {
-		setSkillPercentage(), setProjectStatusLabel()
-	}
-}
+  name: "AboutMe",
+  data: () => ({
+    skills,
+    projects
+  }),
+  mounted() {
+    setSkillPercentage(), setProjectStatusLabel();
+  }
+};
 </script>
 
 <style lang="scss" scoped>
-@import './aboutme.styles.scss';
+@import "./aboutme.styles.scss";
 </style>
