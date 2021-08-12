@@ -1515,14 +1515,14 @@
     serve-static "^1.14.1"
     workbox-cdn "^5.1.4"
 
-"@nuxtjs/style-resources@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.npmjs.org/@nuxtjs/style-resources/-/style-resources-1.2.0.tgz"
-  integrity sha512-8zSxoD+vg2vW+nu0RFfBQmk4cqNTZuf8Vq1Bnjey4LAgT6XC6JTqZYsyWZ08vvttJu/CLjvkzl89E8qHBsqDYA==
+"@nuxtjs/style-resources@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/style-resources/-/style-resources-1.2.1.tgz#9a2b6580b2ed9b06e930bee488a56b8376a263de"
+  integrity sha512-sOp71gCBNuGK2jchybTtVab83yB7jnSr+hw6DAKDgAGX/jrMYUyxRc9tiFxe+8YDSnqghTgQrkEkqPsfS4D4sg==
   dependencies:
     consola "^2.15.3"
     glob-all "^3.2.1"
-    sass-resources-loader "^2.2.3"
+    sass-resources-loader "^2.2.4"
 
 "@nuxtjs/youch@^4.2.3":
   version "4.2.3"
@@ -2766,10 +2766,10 @@ boolbase@^1.0.0, boolbase@~1.0.0:
   resolved "https://registry.npmjs.org/boolbase/-/boolbase-1.0.0.tgz"
   integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
 
-bootstrap@^5.0.0-beta3:
-  version "5.0.0-beta3"
-  resolved "https://registry.npmjs.org/bootstrap/-/bootstrap-5.0.0-beta3.tgz"
-  integrity sha512-0urccjfIOzhrb9qJysN8XW/DRw6rg3zH7qLeKIp4Zyl8+Ens4JWB0NC0cB5AhnSFPd2tftRggjwCMxablo6Tpg==
+bootstrap@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-5.1.0.tgz#543ef8f44f4b9af67b0230f19508542fec38ef55"
+  integrity sha512-bs74WNI9BgBo3cEovmdMHikSKoXnDgA6VQjJ7TyTotU6L7d41ZyCEEelPwkYEzsG/Zjv3ie9IE3EMAje0W9Xew==
 
 boxen@^5.0.1:
   version "5.0.1"
@@ -8746,20 +8746,20 @@ sass-loader@^10:
     schema-utils "^3.0.0"
     semver "^7.3.2"
 
-sass-resources-loader@^2.2.3:
-  version "2.2.3"
-  resolved "https://registry.npmjs.org/sass-resources-loader/-/sass-resources-loader-2.2.3.tgz"
-  integrity sha512-QHyhf1euMF16qC5R24felQYkg7NvSlsNkidUpgrga27hMLqNP5TfmQ6K0iVn7BurKmUU/CDuygZh0py9lXeYPQ==
+sass-resources-loader@^2.2.4:
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/sass-resources-loader/-/sass-resources-loader-2.2.4.tgz#1a86fba499e74a88cb7ce95f0c98449f348d360e"
+  integrity sha512-hIQhBygYky+rLf+4cuoGYONZ623CEH4Swo1fs1WRJkukbqdvN1VIu2KCL59du6vX92bNELzNkGPLx+NorN73xA==
   dependencies:
     async "^3.2.0"
     chalk "^4.1.0"
     glob "^7.1.6"
     loader-utils "^2.0.0"
 
-sass@^1.37.0:
-  version "1.37.0"
-  resolved "https://registry.yarnpkg.com/sass/-/sass-1.37.0.tgz#f1b03a9d072ee9053a29d125c8130c78e92827c2"
-  integrity sha512-B+Tu6cSAG8ffs/cqsZl/bgSH2pCmavDaPTYAoW8QA1qNHh/RqndNfVKuABKYkLjUQ5aq/BnCENVpE80cqdSM1w==
+sass@^1.37.5:
+  version "1.37.5"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.37.5.tgz#f6838351f7cc814c4fcfe1d9a20e0cabbd1e7b3c"
+  integrity sha512-Cx3ewxz9QB/ErnVIiWg2cH0kiYZ0FPvheDTVC6BsiEGBTZKKZJ1Gq5Kq6jy3PKtL6+EJ8NIoaBW/RSd2R6cZOA==
   dependencies:
     chokidar ">=3.0.0 <4.0.0"
 
