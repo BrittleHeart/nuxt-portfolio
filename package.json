@@ -14,7 +14,7 @@
     "aos": "^3.0.0-beta.6",
     "bootstrap": "^5.1.0",
     "core-js": "^3.16.2",
-    "nuxt": "^2.15.7"
+    "nuxt": "^2.13.3"
   },
   "devDependencies": {
     "@nuxt/types": "^2.15.7",
