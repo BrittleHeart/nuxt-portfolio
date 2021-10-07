@@ -12,8 +12,8 @@
   "dependencies": {
     "@nuxtjs/pwa": "^3.3.5",
     "aos": "^3.0.0-beta.6",
-    "bootstrap": "^5.1.2",
-    "core-js": "^3.16.2",
+    "bootstrap": "^5.1.0",
+    "core-js": "^3.18.2",
     "nuxt": "^2.13.3"
   },
   "devDependencies": {
