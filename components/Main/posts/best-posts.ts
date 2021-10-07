@@ -26,5 +26,14 @@ export const best_posts: IPost[] = [
       "Dowiedz się, w jaki sposób zabepieczyć swoje konto oraz poznaj standardowe zasady przechowywania haseł",
     created_at: "3 Sierpień",
     description: `Jak w przeciągu 2s złamać zaszyfrowane hasło? W jaki sposób się przed tym zabepieczyć? Zapraszam do artykułu`
-  }
+  },
+  {
+    id: 4,
+    name: "luka-visa-apple",
+    title: "Luka w zabezpieczeniach Apple Pay",
+    badge:
+      "Zespół badaczy wykrył lukę w zabezpieczeniach Apple Pay z podpiętą kartą Visa. Co się stało?",
+    created_at: "3 Sierpień",
+    description: `Zespół badaczy wykrył lukę w zabezpieczeniach Apple Pay z podpiętą kartą Visa. Co się stało?`
+  },
 ];
