@@ -4,7 +4,7 @@ div
   section#posts.posts-list
     include ../../pug-mixins/header
     article.posts-section-jumbotron(aria-label="Sekcja nagłówkowa" aria-labelledby="jumbotron-header")
-      h1#jumbotron-header.jumbotron-header Wpisy #StaySecure
+      h1#jumbotron-header.jumbotron-header Wpisy na #StaySecure
       p.jumbotron-description
         | Zadbaj o bezpieczeństwo swoje oraz bliskich
     article.posts-section-content
